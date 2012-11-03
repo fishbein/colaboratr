@@ -1,0 +1,274 @@
+body {
+width:100%;
+margin:0 auto;
+background-image: url('/images/background.png');
+background-attachment:fixed;
+font-family: "Helvetica", "Arial";
+color: #045565;
+line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	padding: 0;
+	margin: 0;
+}
+p{
+	font-size: 15px;
+	font-weight: 300;
+}
+h2{
+	font-size: 20px;
+}
+
+/* ----- HEADER ----- */
+
+
+
+#header {
+position: fixed;
+width:100%;
+height:50px;
+background-image:url('/images/header.png');
+-moz-box-shadow:    1px 1px 2px 2px #777;
+-webkit-box-shadow: 1px 1px 2px 2px #777;
+box-shadow:         1px 1px 2px 2px #777;
+padding-left:10px;
+padding-bottom:5px;
+}
+
+
+
+/* FAUX LAYOUT WRAPPER */
+
+
+/* 
+This div is optional: When you delete it the navigation bar and the content block won't have the same size when one of them has a larger height then the other. I recommend you to leave this faux layout wrapper here.
+
+IMPORTANT: In order to make this work you have to download http://csseasy.com/layouts/fixed/background_4.gif (copy past in your address bar) and place it in the same folder as this html file. DON'T HOTLINK to this file.
+*/
+
+
+#wrapper{
+width:870px;
+min-height:500px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:500px; /* for IE5.x and IE6 */
+background:#FFF;
+overflow:auto; /* USE FIREFOX GUYS! WE ONLY NEED THIS LINE BECAUSE INTERNET EXPLODER ISN'T READING CODE PROPERLY */
+margin: 0 auto;
+  border-radius: 5px;
+-moz-border-radius: 5px;
+padding: 10px;
+-moz-box-shadow:    1px 1px 2px 2px #777;
+-webkit-box-shadow: 1px 1px 2px 2px #777;
+box-shadow:         1px 1px 2px 2px #777;
+}
+
+#pad{
+	height: 70px;
+}
+
+
+
+/* ----- NAVIGATION ----- */
+
+
+
+#navigation {
+padding: 5px;
+width:200px;
+min-height:500px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:500px; /* for IE5.x and IE6 */
+float:right;
+background-color:#FFF;
+}
+
+
+/* ----- MAIN CONTENT ----- */
+
+
+
+#content { 
+padding: 15px;
+width:620px;
+min-height:500px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:500px; /* for IE5.x and IE6 */
+background-color:#FFF;
+border-right: #CCC solid 1px;
+}
+
+
+
+/* ----- FOOTER ----- */
+
+
+
+#footer { 
+width:100%;
+height:50px;
+background-color:#333333;
+margin-top:5px;
+background-image: url('/images/background.png');
+}
+
+.post{
+border: #CCC solid 1px;
+margin:10px;
+  border-radius: 5px;
+-moz-border-radius: 5px;
+padding: 5px;
+/*height:120px;*/
+overflow: hidden;
+}
+.post-single{
+	margin:10px;
+	padding: 5px;
+	overflow: hidden;
+}
+textarea{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding:5px;
+	font-size: 15px;
+}
+.comment-single-text{
+border-radius: 5px;
+-moz-border-radius: 5px;
+	border: solid #CCC 1px;
+	padding: 5px;
+	margin: 10px;
+}
+
+
+#header form{
+	margin-right:10px;
+}
+
+input{
+font-family: "Helvetica", "Arial";
+font-size: 14px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+border: #000 1px solid;
+padding: 5px;
+}
+#header input{
+	background: #5f9ebc;
+	color: #FFF;
+	border: #000 0px solid;
+}
+#header input:hover{
+	background: #6eb5d7;
+	//color: #000;
+}
+#header input:focus{
+	background: #FFF;
+	color: #000;
+}
+#header button{
+border: #000 0px solid;
+
+}
+button{
+	font-family: "Helvetica", "Arial";
+border-radius: 5px;
+-moz-border-radius: 5px;
+padding: 6px;
+	font-size: 12px;
+	background: url('/images/button.png');
+	border: #000 1px solid;
+}
+button:active{
+	background: url('/images/button-hover.png');
+}
+
+ul{
+	float:right;
+	padding-right: 10px;
+	color: #FFF;
+}
+ul li{
+	list-style: none;
+	display: inline;
+	padding-right: 10px;
+}
+
+#header a:visited, a:link{
+	color:#FFF;
+	text-decoration: none;
+}
+#header a:hover{
+	color:#FFF;
+	text-decoration: underline;
+}
+
+.tag a:link, a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+.tag a:hover{
+	text-decoration: none;
+}
+
+#wrapper a:link, a:visited{
+	color: #045565;
+	text-decoration: underline;
+}
+#wrapper a:hover{
+	text-decoration: none;
+}
+
+img{
+	border:0;
+}
+
+#pre-email{
+	font-size: 14px;
+	padding: 5px;
+	border-radius: 5px;
+-moz-border-radius: 5px;
+border:1px solid #777;
+width: 156px;
+}
+#pre .btn{
+	font-size: 12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border:1px solid #777;
+	background: url('/images/button.png');
+	font-weight: 100;
+	padding:5px;
+	width:167px;
+	margin-left:44px;
+}
+#pre .btn:active{
+	background: url('/images/button-hover.png');
+}
+#pre{
+	text-align:center;
+	margin:0 auto;
+}
+.green{
+	color: green;
+}
+.red{
+	color: red;
+}
+.postover{
+	background: #eee;
+}
+
+.tag{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding:3px;
+	background-image: url('images/tagback.png');
+	color: #fff;
+	height: 14px;
+	width: intrinsic;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}

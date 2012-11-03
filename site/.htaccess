@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule ^submit$ submit.php
+RewriteRule ^submit/$ submit.php
+
+RewriteRule ^home$ index.php
+RewriteRule ^home/$ index.php
+
+RewriteRule ^idea/([a-zA-Z0-9_-]+)$ post.php?id=$1
+RewriteRule ^idea/([a-zA-Z0-9_-]+)/$ post.php?id=$1
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ user.php?id=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ user.php?id=$1
